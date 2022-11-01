@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://happybots.in/Employee-Onboarding-Process.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+     <title>Happy Bots - By Learning Technologies - RPA world</title>
+     
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="./Happy Bots - By Learning Technologies - RPA world_files/bootstrap.min.css">
+     <link rel="stylesheet" href="./Happy Bots - By Learning Technologies - RPA world_files/font-awesome.min.css">
+     <link rel="stylesheet" href="./Happy Bots - By Learning Technologies - RPA world_files/owl.carousel.css">
+     <link rel="stylesheet" href="./Happy Bots - By Learning Technologies - RPA world_files/owl.theme.default.min.css">
+     
+     <!-- add icon link -->
+        <link rel="icon" href="http://happybots.in/images/author-lt.jpg" type="image/x-icon">
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="./Happy Bots - By Learning Technologies - RPA world_files/templatemo-style.css">
+
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<p id="demo"></p>
+
+<script>
+function randomNumber() {
+let VFN = document.getElementById("first_name").value;
+let VLN = document.getElementById("last_name").value;
+let VPEID = document.getElementById("Personal_EmailID").value;
+var email = document.getElementById('Personal_EmailID');
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if (VFN == "") {
+    alert("First Name must be filled out");
+    return false;
+  }
+
+  else if (VLN == "") {
+    alert("Last Name must be filled out");
+    return false;
+  }
+
+ else if (VPEID == "") {
+    alert("Personal Email address must be filled out");
+    return false;
+  }
+else  if (!filter.test(email.value)) {
+    alert('Please provide a valid Personal email address');
+    email.focus;
+    return false;
+}
+else{
+let x = Math.floor((Math.random() * 100000) + 1);
+document.getElementById("Employee_ID").value = x;
+
+        var Fn = document.getElementById("first_name").value;
+         var Mn = ".";
+         var Ln= document.getElementById("last_name").value;
+         var Email = "@happybots.in"
+         var res = Fn + Mn + Ln + Email ;
+document.getElementById("Email_ID").value = res;
+document.getElementById("first_name").value = "";
+document.getElementById("last_name").value = "";
+document.getElementById("Personal_EmailID").value = "";
+}
+}
+</script>
+
+     <!-- PRE LOADER -->
+     <section class="preloader" style="display: none;">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top top-nav-collapse" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="http://happybots.in/Employee-Onboarding-Process.html#" class="navbar-brand"><img src="./Happy Bots - By Learning Technologies - RPA world_files/NEW HAPPY BOTS.png" class="img-responsive" alt="" width="200" height="150"></a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="http://happybots.in/index.html#top" class="smoothScroll">Home</a></li>
+			<li><a href="http://happybots.in/index.html#about" class="smoothScroll">About</a></li>
+                         <li><a href="http://happybots.in/index.html#courses" class="smoothScroll">RPA Tutorials</a></li>
+ 			 <li><a href="http://happybots.in/index.html#team" class="smoothScroll">Sponsors</a></li>
+ 			 <li><a href="http://happybots.in/index.html#contact" class="smoothScroll">Contact</a></li>
+                         <li><a href="https://youtube.com/learningtechnologies" class="smoothScroll" target="_blank">Youtube Channel</a></li>
+                        
+		</ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="http://happybots.in/Employee-Onboarding-Process.html#"><i class="fa fa-phone"></i> +91 6303219209</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+<form class="well form-horizontal" action="http://happybots.in/Employee-Onboarding-Process.html" method="post" id="Onboard_form">
+<fieldset>
+
+<!-- Form Name -->
+<div class="alert alert-success" role="alert" id="success_message"><center><h2><b>HR - Employee OnBoarding Process</b></h2></center><br></div>
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-3 control-label">Employee ID </label>  
+  <div class="col-md-2 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input id="Employee_ID" name="Employee_ID" placeholder="Auto-Genrate Employee ID" class="form-control" style="background-color:#FCF5D8;color:#AD8C08;" type="text" disabled="">
+    </div>
+  </div>
+<label class="col-md-2 control-label">Corporate Email ID</label>  
+  <div class="col-md-3 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input id="Email_ID" name="Email_ID" placeholder="Auto-Genrate corporate Email ID" class="form-control" style="background-color:#FCF5D8;color:#AD8C08;" type="text" disabled="">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-3 control-label">First Name*</label>  
+  <div class="col-md-2 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input id="first_name" name="first_name" placeholder="First Name" class="form-control" type="text">
+    </div>
+  </div>
+<label class="col-md-2 control-label">Last Name*</label>  
+  <div class="col-md-2 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input id="last_name" name="first_name" placeholder="Last Name" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-3 control-label">DOB</label>  
+  <div class="col-md-2 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input id="dob" name="DOB" placeholder="DD-MM-YYYY" class="form-control" type="text">
+    </div>
+  </div>
+<label class="col-md-2 control-label">Gender</label>  
+  <div class="col-md-2 inputGroupContainer">
+  <div class="input-group">
+  <input type="radio" id="GMale" name="gender" value="Male"> Male  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="Gfemale" name="gender" value="Female"> Female<br>
+    </div>
+  </div>
+
+</div>
+
+<!-- Text input-->
+ 
+
+  <div class="form-group"> 
+
+<label class="col-md-3 control-label">Job Position</label>  
+  <div class="col-md-2 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input id="job_position" name="job_position" placeholder="Job Position" class="form-control" type="text">
+    </div>
+  </div>
+  <label class="col-md-2 control-label">Department</label>
+    <div class="col-md-2 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="department" class="form-control selectpicker">
+      <option value="">Select your Department</option>
+      <option>Accounts and Finance</option>
+      <option>Human Resources</option>
+      <option>Sales and marketing</option>
+      <option>Research and development</option>
+      <option>Learning and development</option>
+      <option>IT services</option>
+      <option>Product development</option>
+      <option>Admin department</option>
+      <option>Security and transport</option>
+    </select>
+  </div>
+</div>
+</div>
+  <div class="form-group">
+  <label class="col-md-3 control-label">Contact Number</label>  
+  <div class="col-md-2 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input id="Contact_Number" name="Contact_Number" placeholder="(+91)" class="form-control" type="text">
+    </div>
+  </div>
+<label class="col-md-2 control-label">Personal Email ID*</label>  
+  <div class="col-md-2 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input id="Personal_EmailID" name="Personal_EmailID" placeholder="Personal Email ID" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+<!-- Text input-->
+ <div class="form-group"> 
+  <label class="col-md-4 control-label"><h2><b><u>Equipment Preferences</u></b></h2></label>
+</div>
+<div class="form-group">
+  <label class="col-md-3 control-label">Operating System</label>  
+  <div class="col-md-2 inputGroupContainer">
+  <div class="input-grouplaptop">
+  <input type="radio" id="LaptopMac" name="Laptop" value="Mac"> Mac  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="LaptopWindows" name="Laptop" value="Windows"> Windows<br>
+    </div>
+</div>
+<label class="col-md-2 control-label">Mouse Preferences</label>  
+  <div class="col-md-2 inputGroupContainer">
+  <div class="input-group">
+  <input type="radio" id="MouseWired" name="Mouse" value="Wired"> Wired  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="MouseWireless" name="Mouse" value="Wireless"> Wireless<br>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-3 control-label">KeyBoard Preferences</label>  
+  <div class="col-md-2 inputGroupContainer">
+  <div class="input-group">
+  <input type="radio" id="KeyBoardWired" name="KeyBoard" value="Wired"> Wired  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="KeyBoardWireless" name="KeyBoard" value="Wireless"> Wireless<br>
+    </div>
+  </div>
+<label class="col-md-2 control-label">HeadPhones</label>  
+  <div class="col-md-2 inputGroupContainer">
+  <div class="input-group">
+  <input type="radio" id="HeadPhonesWired" name="HeadPhones" value="Wired"> Wired  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="HeadPhoneswireless" name="HeadPhones" value="Wireless"> Wireless<br>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+    <label class="col-md-3 control-label"> <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me </label>
+  <p>By creating an account you agree to our <a href="http://happybots.in/Employee-Onboarding-Process.html#" style="color:dodgerblue">Terms &amp; Privacy</a>.</p>
+</div>
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4"><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="SUBMIT" type="button" value="SUBMIT" class="btn btn-warning" onclick="randomNumber();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+    <!-- /.container -->
+     
+     <!-- FOOTER -->
+     <footer id="footer">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Happy Bots</h2>
+                              </div>
+                               <ul class="social-icon">
+                                   <li><a href="https://www.facebook.com/Learning-Technologies-BluePrismAutomation-AnywhereUIpathPower-Automate-198383840734551" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="https://twitter.com/indian_careers" class="fa fa-twitter"></a></li>
+                                   <li><a href="https://www.linkedin.com/in/learn-rpa-technologies-65420a1a6/" class="fa fa-linkedin-square"></a></li>
+                                   <li><a href="https://youtube.com/learningtechnologies" class="fa fa-youtube-square"></a></li>
+                              </ul>                           
+                         </div>
+                    </div> 
+<div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Contact Info</h2>
+                              </div>
+                              <address>
+                                   <p>+91 6303219209</p>
+                                   <p><a href="mailto:learningtechnologies2020@gmail.com">learningtechnologies2020@gmail.com</a></p>
+                              </address>
+
+                              <!--<div class="footer_menu">
+                                   <h2>Quick Links</h2>
+                                   <ul>
+                                        <li><a href="#">Career</a></li>
+                                        <li><a href="#">Investor</a></li>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><a href="#">Refund Policy</a></li>
+                                   </ul>
+                              </div> -->
+                         </div>
+                    </div>
+
+
+<div class="col-md-4 col-sm-7">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Supported By </h2>
+                              </div>
+                              <div>
+                                   <img src="./Happy Bots - By Learning Technologies - RPA world_files/club images.jpg" class="img-responsive" alt="" width="750" height="1000">
+                              </div>
+
+                              
+
+                         </div>
+                    </div>
+                 
+               </div>
+          </div>
+     </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="./Happy Bots - By Learning Technologies - RPA world_files/jquery.js.download"></script>
+     <script src="./Happy Bots - By Learning Technologies - RPA world_files/bootstrap.min.js.download"></script>
+     <script src="./Happy Bots - By Learning Technologies - RPA world_files/owl.carousel.min.js.download"></script>
+     <script src="./Happy Bots - By Learning Technologies - RPA world_files/smoothscroll.js.download"></script>
+     <script src="./Happy Bots - By Learning Technologies - RPA world_files/custom.js.download"></script>
+
+
+</body></html>
